@@ -1,6 +1,11 @@
-get_data_from_web took 1.857 seconds<br>
-read_data_from_parquet took 0.287 seconds<br>
-init_pg_engine took 0.05 seconds<br>
-create_postgres_table took 0.2 seconds<br>
-load_data_to_postgres took 250.764 seconds<br>
-get_data_from_postgres took 22.934 seconds<br>
+_____1/1_____<br>
+sqlalchemy,init_pg_engine,0.027<br>
+sqlalchemy,create_postgres_table,0.121<br>
+pandas,read_data_from_parquet,0.112<br>
+pandas,load_data_to_postgres,207.217<br>
+pandas,get_data_from_postgres,22.619<br>
+sqlalchemy,init_pg_engine,0.0<br>
+sqlalchemy,create_postgres_table,0.155<br>
+polars,read_data_from_parquet,0.135<br>
+polars,load_data_to_postgres,201.734<br>
+polars,get_data_from_postgres,24.368<br>

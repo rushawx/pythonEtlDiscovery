@@ -1,0 +1,10 @@
+sqlalchemy,init_pg_engine,0.027
+sqlalchemy,create_postgres_table,0.121
+pandas,read_data_from_parquet,0.112
+pandas,load_data_to_postgres,207.217
+pandas,get_data_from_postgres,22.619
+sqlalchemy,init_pg_engine,0.0
+sqlalchemy,create_postgres_table,0.155
+polars,read_data_from_parquet,0.135
+polars,load_data_to_postgres,201.734
+polars,get_data_from_postgres,24.368

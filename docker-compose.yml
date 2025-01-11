@@ -10,11 +10,3 @@ services:
       - POSTGRES_DB=${PG_DATABASE}
     ports:
       - "5432:5432"
-    volumes:
-      - ./init/pg:/docker-entrypoint-initdb.d
-    healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U ${PG_USER} -d ${PG_DATABASE} && PGPASSWORD=${PG_PASSWORD} psql -U ${PG_USER} -d ${PG_NAME} -c \"SELECT 1 FROM public.health_check WHERE status = 'ready';\" | grep -q 1"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-    restart: unless-stopped
